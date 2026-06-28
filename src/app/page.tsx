@@ -1,4 +1,5 @@
 import Navbar from '@/components/layout/Navbar';
+import TechStack from '@/components/sections/TechStack';
 
 export default function Home() {
   return (
@@ -45,7 +46,7 @@ export default function Home() {
           id="about"
           className="w-full min-h-screen flex items-center justify-center bg-bg-secondary px-4 sm:px-6 lg:px-8 py-20 transition-colors duration-300"
         >
-          <div className="max-w-5xl mx-auto w-full">
+          <div className="max-w-7xl mx-auto w-full">
             <h2 className="text-4xl md:text-5xl font-bold text-text-secondary mb-12 text-center">
               About Me
             </h2>
@@ -58,17 +59,7 @@ export default function Home() {
               </p>
             </div>
             
-            {/* Tech Stack Chips Placeholder */}
-            <div className="flex flex-wrap justify-center gap-3">
-              {['Python', 'Scikit-learn', 'XGBoost', 'TypeScript', 'Next.js', 'Streamlit'].map((tech) => (
-                <span
-                  key={tech}
-                  className="px-4 py-2 bg-bg-primary text-text-secondary rounded-full font-medium shadow-sm border border-border-subtle/30"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
+            <TechStack />
           </div>
         </section>
 
