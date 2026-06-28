@@ -64,7 +64,7 @@ export default function Navbar() {
             )}
 
             <a
-              href="/resume.pdf"
+              href="/Christan_Toreres_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-2 bg-accent-green text-bg-primary rounded-full font-medium hover:bg-accent-blue transition-colors duration-300 shadow-md"

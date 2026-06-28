@@ -18,17 +18,17 @@ export default function Home() {
           <div className="max-w-4xl text-center">
             <FadeIn delay={100}>
               <h1 className="text-5xl md:text-7xl font-extrabold text-text-secondary mb-6 tracking-tight">
-                Hi, I'm <span className="text-accent-green">Christan Toreres</span>.
+                Hi, It's <span className="text-accent-green">Christan</span>.
               </h1>
             </FadeIn>
             <FadeIn delay={300}>
               <h2 className="text-2xl md:text-3xl font-semibold text-accent-blue mb-8">
-                AI & Machine Learning Engineer
+                AI & Machine Learning
               </h2>
             </FadeIn>
             <FadeIn delay={500}>
               <p className="text-lg md:text-xl text-text-primary mb-10 max-w-3xl mx-auto leading-relaxed">
-                I specialize in architecting intelligent data pipelines and training high-performing machine learning models. I transform massive datasets into actionable insights and deploy AI-driven solutions to the web.
+                I specialize in architecting intelligent data pipelines and training machine learning models. I transform massive datasets into actionable insights and deploy AI-driven solutions to the web.
               </p>
             </FadeIn>
             <FadeIn delay={700}>
@@ -68,7 +68,7 @@ export default function Home() {
                   I am a Computer Engineering student at the Polytechnic University of the Philippines with a strong specialization in Data Science and Artificial Intelligence.
                 </p>
                 <p>
-                  My core expertise lies in building robust predictive models, engineering complex data features, and automating analytical pipelines. From tuning hyper-parameters to deploying real-time risk assessment interfaces, I am passionate about solving complex problems through data.
+                  I am an engineering student actively expanding my expertise into machine learning, data science, and AI development. Building on a strong foundation in software architecture and modern web development, I specialize in creating logic-driven applications. From analyzing complex datasets with Python to building predictive models, I am deeply passionate about solving problems through clean, intelligent software.
                 </p>
               </div>
             </FadeIn>
