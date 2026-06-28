@@ -25,7 +25,7 @@ const PROJECTS_DATA = [
   },
   {
     title: 'LogistIQ | Full-Stack Platform',
-    tags: ['Database Architecture', 'Agile Leadership'],
+    tags: ['Database Architecture'],
     description: 'Managed the complete lifecycle of a full-stack logistics application. Engineered synthetic datasets and established a robust relational database architecture.',
     videoSrc: '/videos/logistiq.mp4',
     linkUrl: 'https://github.com/ctoreres',

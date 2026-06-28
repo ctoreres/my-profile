@@ -33,9 +33,8 @@ export default function Home() {
               </a>
               <a
                 href="/resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full sm:w-auto px-8 py-4 bg-transparent border-2 border-border-subtle text-text-secondary rounded-full font-bold text-lg hover:border-text-secondary hover:bg-text-secondary hover:text-bg-primary transition-all duration-300"
+                download="Christan_Toreres_Resume.pdf"
+                className="w-full sm:w-auto px-8 py-4 bg-transparent border-2 border-border-subtle text-text-secondary rounded-full font-bold text-lg hover:border-text-secondary hover:bg-text-secondary hover:text-bg-primary transition-all duration-300 text-center"
               >
                 Download Resume
               </a>

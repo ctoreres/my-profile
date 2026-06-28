@@ -7,22 +7,22 @@ export default function Contact() {
         <h2 className="text-4xl md:text-5xl font-bold text-text-secondary mb-8">
           Let's Connect
         </h2>
-        <p className="text-lg md:text-xl text-text-primary mb-12 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-lg md:text-xl text-text-primary mb-10 max-w-2xl mx-auto leading-relaxed">
           Whether you have a question about machine learning architectures, want to collaborate on a full-stack project, or just want to say hi, my inbox is always open.
         </p>
         
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-          {/* Email Button */}
-          <a
-            href="mailto:torereschristan@gmail.com"
-            className="w-full sm:w-auto px-8 py-4 bg-accent-green text-bg-primary rounded-full font-bold text-lg hover:bg-accent-blue transition-colors duration-300 shadow-lg flex items-center justify-center"
+        {/* Prominent Email Display */}
+        <div className="mb-12 p-6 bg-bg-primary rounded-2xl border border-border-subtle/20 inline-block shadow-sm">
+          <p className="text-sm font-semibold text-accent-muted uppercase tracking-wider mb-2">Reach me directly at</p>
+          <a 
+            href="mailto:torereschristan@gmail.com" 
+            className="text-2xl md:text-4xl font-extrabold text-accent-green hover:text-accent-blue transition-colors duration-300 flex items-center justify-center gap-3 break-all"
           >
-            <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-            </svg>
-            Email Me
+            torereschristan@gmail.com
           </a>
-          
+        </div>
+        
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-4">
           {/* LinkedIn Button */}
           <a
             href="https://www.linkedin.com/in/christan-jireh-toreres-b47134354/"
