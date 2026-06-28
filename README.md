@@ -2,9 +2,9 @@
 
 A modern, responsive, single-page personal portfolio application built to showcase my expertise as an AI & Machine Learning Engineer and Full-Stack Developer.
 
-<!-- ## 🚀 Live Demo
+## 🚀 Live Demo
 
-*(Add deployment link here, e.g., Vercel, Netlify)* -->
+**[View Live Portfolio Here](https://christan-blue.vercel.app/)**
 
 ## 🛠 Tech Stack
 
