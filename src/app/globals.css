@@ -1,16 +1,41 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-primary-light: #DEE1DD;
-  --color-secondary-light: #C4CDC1;
-  --color-accent-muted: #99AEAD;
-  --color-accent-blue: #6D9197;
-  --color-accent-green: #658B6F;
-  --color-primary-dark: #2F575D;
-  --color-secondary-dark: #28363D;
+  --color-accent-muted: var(--accent-muted);
+  --color-accent-blue: var(--accent-blue);
+  --color-accent-green: var(--accent-green);
+
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-secondary: var(--bg-secondary);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-border-subtle: var(--border-subtle);
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+}
+
+:root {
+  /* Common Palette */
+  --accent-muted: #99AEAD;
+  --accent-blue: #6D9197;
+  --accent-green: #658B6F;
+
+  /* LIGHT MODE (Fallback) */
+  --bg-primary: #DEE1DD;
+  --bg-secondary: #C4CDC1;
+  --text-primary: #28363D;
+  --text-secondary: #2F575D;
+  --border-subtle: #99AEAD;
+}
+
+.dark {
+  /* DARK MODE (Default intent) */
+  --bg-primary: #121A1C; /* Darkened from #28363D for better contrast */
+  --bg-secondary: #1F2E32; /* Adjusted from #2F575D for cards */
+  --text-primary: #DEE1DD;
+  --text-secondary: #C4CDC1;
+  --border-subtle: #4A656A;
 }
 
 html {
@@ -19,6 +44,6 @@ html {
 }
 
 body {
-  background-color: var(--color-primary-light);
-  color: var(--color-secondary-dark);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
 }
