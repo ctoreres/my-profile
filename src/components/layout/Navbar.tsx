@@ -28,7 +28,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <Link href="#hero" className="text-2xl font-bold text-text-secondary">
-              CT.
+              C.T.
             </Link>
           </div>
 

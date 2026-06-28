@@ -13,7 +13,7 @@ export default function Contact() {
         
         <FadeIn delay={150}>
           <p className="text-lg md:text-xl text-text-primary mb-10 max-w-2xl mx-auto leading-relaxed">
-            Whether you have a question about machine learning architectures, want to collaborate on a full-stack project, or just want to say hi, my inbox is always open.
+            Whether you have a question/inquiries, want to collaborate on a project/competitions, or just want to say hi, my inbox is always open.
           </p>
         </FadeIn>
         
