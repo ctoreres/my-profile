@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Christan Toreres - Personal Portfolio
 
-## Getting Started
+A modern, responsive, single-page personal portfolio application built to showcase my expertise as an AI & Machine Learning Engineer and Full-Stack Developer.
 
-First, run the development server:
+## 🚀 Live Demo
+
+*(Add deployment link here, e.g., Vercel, Netlify)*
+
+## 🛠 Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org/) (App Router)
+- **Library**: [React](https://reactjs.org/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+
+## ✨ Key Features
+
+- **Single Page Architecture**: Smooth scrolling between sections (`Hero`, `About`, `Tech Stack`, `Projects`, `Contact`) using native CSS behavior and sticky navigation.
+- **Dynamic Scroll Animations**: Custom lightweight `FadeIn` wrapper utilizing the Intersection Observer API to smoothly reveal content as it enters the viewport (no heavy external libraries like Framer Motion).
+- **Interactive Project Showcase**:
+  - Grid layout that defaults to 3 featured projects to conserve vertical space.
+  - "See Other Projects" toggle functionality.
+  - Interactive "video on hover" overlay effect for each project card.
+- **Custom Design System**: A meticulously crafted cohesive dark/slate color palette mapping (`#DEE1DD`, `#C4CDC1`, `#99AEAD`, `#6D9197`, `#658B6F`, `#2F575D`, `#28363D`) implemented via Tailwind config.
+- **Accessible Contact Section**: Prominent, highly scannable email and social links (LinkedIn, GitHub) with a direct Resume download integration.
+
+## 💻 Getting Started
+
+First, ensure you have Node.js installed, then clone the repository and install dependencies:
+
+```bash
+# Clone the repo
+git clone https://github.com/ctoreres/my-profile.git
+
+# Navigate into the project
+cd my-profile
+
+# Install dependencies
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```text
+├── public/                 # Static assets (Resume PDF, project videos, etc.)
+├── src/
+│   ├── app/                # Next.js App Router root (page.tsx, layout.tsx, global.css)
+│   ├── components/
+│   │   ├── layout/         # Reusable layout wrappers (Navbar.tsx)
+│   │   ├── sections/       # Primary page sections (TechStack.tsx, Projects.tsx, Contact.tsx)
+│   │   └── ui/             # Reusable UI components (ProjectCard.tsx, FadeIn.tsx)
+│   └── lib/                # Utility functions and hooks (if any)
+└── tailwind.config.ts      # Tailwind CSS configuration and custom color tokens
+```
 
-## Learn More
+## 📝 License
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is open source and available under the [MIT License](LICENSE).
