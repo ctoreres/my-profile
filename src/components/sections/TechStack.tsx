@@ -1,49 +1,14 @@
 import React from 'react';
 
-const SKILL_CATEGORIES = [
-  {
-    title: 'AI & Data Science',
-    skills: [
-      'Scikit-learn',
-      'XGBoost',
-      'CatBoost',
-      'Pandas',
-      'NumPy',
-      'Matplotlib',
-      'Seaborn',
-    ],
-  },
-  {
-    title: 'Languages & Core',
-    skills: [
-      'Python',
-      'TypeScript',
-      'JavaScript',
-      'SQL',
-      'C++',
-      'HTML / CSS',
-    ],
-  },
-  {
-    title: 'Web Integration',
-    skills: [
-      'Next.js',
-      'React.js',
-      'Tailwind CSS',
-      'Streamlit',
-      'Flask',
-    ],
-  },
-  {
-    title: 'Databases & Tools',
-    skills: [
-      'MySQL',
-      'SQLAlchemy',
-      'Git / GitHub',
-      'Jupyter Notebook',
-      'VS Code',
-    ],
-  },
+const SKILLS = [
+  'Scikit-learn',
+  'Python',
+  'SQL',
+  'TypeScript',
+  'JavaScript',
+  'HTML/CSS',
+  'React.js',
+  'Flask'
 ];
 
 export default function TechStack() {
@@ -52,23 +17,21 @@ export default function TechStack() {
       <h3 className="text-3xl font-bold text-text-secondary mb-10 text-center">
         Technical Arsenal
       </h3>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {SKILL_CATEGORIES.map((category) => (
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+        {SKILLS.map((skill) => (
           <div
-            key={category.title}
-            className="bg-bg-primary rounded-xl p-6 border border-border-subtle/30 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col h-full"
+            key={skill}
+            className="group relative bg-bg-secondary rounded-2xl p-6 flex items-center justify-center border border-border-subtle/20 hover:border-accent-blue/50 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-blue/10 cursor-default"
           >
-            <h4 className="text-xl font-bold text-accent-blue mb-4 border-b border-border-subtle/20 pb-2">
-              {category.title}
-            </h4>
-            <ul className="space-y-3 flex-grow">
-              {category.skills.map((skill) => (
-                <li key={skill} className="flex items-center text-text-primary text-base">
-                  <span className="w-2 h-2 rounded-full bg-accent-green mr-3 flex-shrink-0"></span>
-                  <span>{skill}</span>
-                </li>
-              ))}
-            </ul>
+            {/* Subtle background glow effect on hover */}
+            <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/0 via-accent-blue/0 to-accent-blue/0 group-hover:from-accent-blue/10 group-hover:to-transparent transition-colors duration-500 rounded-2xl" />
+            
+            {/* Minimalist dot indicator */}
+            <div className="absolute top-3 left-3 w-1.5 h-1.5 rounded-full bg-border-subtle group-hover:bg-accent-green transition-colors duration-300" />
+            
+            <span className="relative text-lg md:text-xl font-bold text-text-primary group-hover:text-accent-blue transition-colors duration-300 text-center">
+              {skill}
+            </span>
           </div>
         ))}
       </div>

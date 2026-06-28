@@ -14,13 +14,13 @@ export default function Home() {
         >
           <div className="max-w-4xl text-center">
             <h1 className="text-5xl md:text-7xl font-extrabold text-text-secondary mb-6 tracking-tight">
-              Hi, I'm <span className="text-accent-green">Christan Toreres</span>.
+              Hi, It's <span className="text-accent-green">Christan</span>.
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold text-accent-blue mb-8">
-              AI & Machine Learning Engineer
+              AI & Machine Learning 
             </h2>
             <p className="text-lg md:text-xl text-text-primary mb-10 max-w-3xl mx-auto leading-relaxed">
-              I specialize in architecting intelligent data pipelines and training high-performing machine learning models. I transform massive datasets into actionable insights and deploy AI-driven solutions to the web.
+              I specialize in architecting intelligent data pipelines and training machine learning models. I transform massive datasets into actionable insights and deploy AI-driven solutions to the web.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
