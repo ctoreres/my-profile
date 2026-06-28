@@ -6,32 +6,39 @@ import FadeIn from '@/components/ui/FadeIn';
 
 const PROJECTS_DATA = [
   {
+    title: 'Dragonfly',
+    tags: ['AI', 'Web Development', 'TypeScript'],
+    description: 'List out the materials and errors from your uploaded circuit schematic diagram.',
+    videoSrc: '/videos/fraud-detection.mp4',
+    linkUrl: 'https://dragonfly-rose.vercel.app/', 
+  },
+  {
     title: 'Financial Fraud Detection System',
     tags: ['Machine Learning', 'Data Science', 'Python'],
-    description: 'Real-time risk assessment pipeline analyzing a 6.3M transaction dataset. Achieved 94% recall and 95% accuracy using Logistic Regression with balanced class weights.',
+    description: 'Risk assessment pipeline analyzing transaction dataset and predict whether its a fraud or not.',
     videoSrc: '/videos/fraud-detection.mp4',
-    linkUrl: 'https://github.com/ctoreres', 
+    linkUrl: 'https://ctoreres-fraud-detection.hf.space/', 
+  },
+  {
+    title: 'LogistIQ',
+    tags: ['Database Architecture', 'SQL'],
+    description: 'Engineered synthetic datasets and established a robust relational database architecture for a full-stack logistic project.',
+    videoSrc: '/videos/logistiq.mp4',
+    linkUrl: 'https://github.com/ctoreres',
+  }, 
+  {
+    title: 'Hexnode',
+    tags: ['Web Development', 'Algorithms', 'React'],
+    description: 'Interactive tool that allows users to visualize different Data Structure and Algorithms.',
+    videoSrc: '/videos/hexnode.mp4',
+    linkUrl: 'https://hexnode-gamma.vercel.app/',
   },
   {
     title: 'Student Performance Predictor',
     tags: ['Machine Learning', 'Full-Stack Web', 'Next.js'],
-    description: 'Automated data ingestion and hyperparameter tuning pipeline evaluating 7+ models (including XGBoost and CatBoost) to attain an 88.04% R² score, integrated into a Next.js frontend.',
+    description: 'A ML project that predicts the mathematical exam score of a student.',
     videoSrc: '/videos/performance-predictor.mp4',
-    linkUrl: 'https://github.com/ctoreres',
-  },
-  {
-    title: 'Hexnode | DSA Visualizer',
-    tags: ['Web Development', 'Algorithms', 'React'],
-    description: 'Interactive tool featuring a recursive state-generation engine. Visualizes complex Tree Traversals and Dynamic Programming with synchronized real-time pseudocode tracking.',
-    videoSrc: '/videos/hexnode.mp4',
-    linkUrl: 'https://github.com/ctoreres',
-  },
-  {
-    title: 'LogistIQ | Full-Stack Platform',
-    tags: ['Database Architecture', 'Agile Leadership'],
-    description: 'Managed the complete lifecycle of a full-stack logistics application. Engineered synthetic datasets and established a robust relational database architecture.',
-    videoSrc: '/videos/logistiq.mp4',
-    linkUrl: 'https://github.com/ctoreres',
+    linkUrl: 'https://performance-predictor-tau.vercel.app/',
   }
 ];
 
